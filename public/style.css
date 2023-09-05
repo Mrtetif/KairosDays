@@ -129,6 +129,10 @@ body {
   height: 7rem;
 }
 
+.service-img a {
+  text-decoration: none;
+}
+
 .service-img:hover {
   width: 94%;
   height: 94%;
@@ -136,6 +140,10 @@ body {
   align-self: center;
   justify-self: center;
   box-shadow: 0 0.1rem 2.5rem rgba(0, 0, 0, 0.4);
+}
+
+.service-img h4:hover {
+  color: #a8d3b9;
 }
 
 .grey-background {
