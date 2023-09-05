@@ -142,7 +142,8 @@ body {
   box-shadow: 0 0.1rem 2.5rem rgba(0, 0, 0, 0.4);
 }
 
-.service-img h4:hover {
+.service-img h4:hover,
+.service-img h4:active {
   color: #a8d3b9;
 }
 
