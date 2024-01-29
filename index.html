@@ -3,374 +3,666 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./public/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./public/normalize.css" />
+    <link rel="stylesheet" href="./public/main.css" />
+    <!-- font-awesome -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,400;0,600;0,800;
-      1,400;1,600;1,800&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <title>Kairos</title>
   </head>
   <body>
-    <div class="header">
-      <div class="nav">
-        <div class="logo">
-          <img
-            style="margin-right: 0.8rem"
-            width="64px"
-            height="64px"
-            src="./assets/images/logoInstagram.jpg"
-            alt="Kairos Logo"
-          />
-          <p>
-            Kairos <br />
-            Days
-          </p>
+    <!-- nav -->
+    <nav id="3" class="nav-bar">
+      <div class="nav-center">
+        <!-- header -->
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo nav-link">
+            <!-- <img class="img" src="./assets/images/Logo.svg" alt="kairos logo" /> -->
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 312 312"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2_2)">
+                <path
+                  d="M203.7 266.1L89.5 154.2L201.9 45.7H224.2H264.9H266.4C266.4 45.7 225.3 -0.599986 156.2 1.37361e-05C87.2 0.600014 46.1 45.7 46.1 45.7H78.4V106.4L139.1 45.7H173.5L73.3 142C66.9 148.2 66.8 158.5 73.1 164.8L174.5 266.2H139.1L78.4 205.5V266.2H46.1C46.1 266.2 87.2 312.5 156.3 311.9C225.4 311.3 266.5 266.2 266.5 266.2H224.2L203.7 266.1Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M0.400008 155.9C1.00001 225.1 46.1 266.1 46.1 266.1V45.7C46.1 45.7 -0.199992 86.8 0.400008 155.9Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M273.1 154.3C283.6 143.8 300.6 143.8 311.1 154.3L311.4 154.6C300.9 165.1 283.9 165.1 273.4 154.6L273.1 154.3Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M264.9 186.2C276 186.2 285 195.2 285 206.3V206.7C273.9 206.7 264.9 197.7 264.9 186.6V186.2Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M264.6 122.6C264.6 111.5 273.6 102.5 284.7 102.5H285.1C285.1 113.6 276.1 122.6 265 122.6H264.6Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M192.7 154.8C182.2 165.3 165.2 165.3 154.7 154.8L154.4 154.5C164.9 144 181.9 144 192.4 154.5L192.7 154.8Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M233.2 194.7C243.7 205.2 243.7 222.2 233.2 232.7L232.9 233C222.4 222.5 222.4 205.5 232.9 195L233.2 194.7Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M232.6 114.4C222.1 103.9 222.1 86.9 232.6 76.4L233 76C243.5 86.5 243.5 103.5 233 114L232.6 114.4Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M200.9 122.9C189.8 122.9 180.8 113.9 180.8 102.8V102.4C191.9 102.4 200.9 111.4 200.9 122.5V122.9Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M201.2 186.5C201.2 197.6 192.2 206.6 181.1 206.6H180.7C180.7 195.5 189.7 186.5 200.8 186.5H201.2Z"
+                  fill="#abd1c6"
+                />
+                <path
+                  d="M233.7 166.1C240.107 166.1 245.3 160.907 245.3 154.5C245.3 148.094 240.107 142.9 233.7 142.9C227.293 142.9 222.1 148.094 222.1 154.5C222.1 160.907 227.293 166.1 233.7 166.1Z"
+                  fill="#abd1c6"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_2">
+                  <rect width="311.8" height="311.8" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Kairos<br />Days
+          </a>
+          <button class="btn nav-btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
         </div>
-        <ul class="nav-bar">
-          <li class="link">Home</li>
-          <li class="link">About</li>
-          <li class="link">Services</li>
-          <li class="link">Contact</li>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">home</a>
+          <a href="#1" class="nav-link">sobre nosotros</a>
+          <a href="#2" class="nav-link">servicios</a>
+        </div>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li> -->
         </ul>
       </div>
-    </div>
-    <section class="main">
-      <div class="inner-banner center">
-        <h1 class="hero-title">Event Planning</h1>
-        <img
-          style="margin: 0 auto"
-          width="200rem"
-          src="./assets/images/divider.jpg"
-          alt="divider"
-        />
-        <p class="paragraph2">
-          Create & plan your perfect <em>event</em> with
-          <span style="text-decoration: underline">Kairos Days</span>
-        </p>
-      </div>
-      <div class="nav hero-banner"></div>
-    </section>
-    <div class="card center">
-      <article class="card-setting">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="3em"
-          fill="currentColor"
-          class="bi bi-speedometer2"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1
-            .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1
-            .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0
-            1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302
-            1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"
-          />
-          <path
-            fill-rule="evenodd"
-            d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475
-            13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0
-            10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8
-            12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"
-          />
-        </svg>
-        <h3 class="title3">Qualified Team</h3>
-        <p class="paragraph1">
-          Amour employs the best wedding experts in Los Angeles to help you make
-          your wedding unforgettable
-        </p>
-      </article>
-      <article class="card-setting">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="3em"
-          fill="currentColor"
-          class="bi bi-person-circle"
-          viewBox="0 0 16 16"
-        >
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-          <path
-            fill-rule="evenodd"
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805
-            10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-          />
-        </svg>
-        <h3 class="title3">Profesional Approach</h3>
-        <p class="paragraph1">
-          We will thoroughly plan every element of your wedding ceremony so that
-          you could enjoy your most important day.
-        </p>
-      </article>
-      <article class="card-setting">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="3em"
-          fill="currentColor"
-          class="bi bi-currency-exchange"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M0 5a5.002 5.002 0 0 0 4.027 4.905 6.46 6.46 0 0 1
-            .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05c0-.046
-            0-.093.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0
-            .59.031.819.085v.733a3.46 3.46 0 0 0-.815-.082c-.919 0-1.538.466-1.734
-            1.252h1.917v.427h-1.98c-.003.046-.003.097-.003.147v.422h1.983v.427H3.93c.118.602.468
-            1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5zm16 5.5a5.5 5.5 0 1
-            1-11 0 5.5 5.5 0 0 1 11 0zm-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086
-            1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808
-            1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787H8.25zm1.96-1.895c-.532-.12-.82-.364-.82-.732
-            0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674l.077.018z"
-          />
-        </svg>
-        <h3 class="title3">Acceptable Prices</h3>
-        <p class="paragraph1">
-          Our clients value our affordable pricing policy and great service that
-          allow us to plan the best weddings.
-        </p>
-      </article>
-    </div>
-    <section class="grey-background">
-      <div class="title center">
-        <h2>What We Offer</h2>
-        <img
-          style="margin: 0 auto; padding-bottom: 2rem"
-          width="200rem"
-          src="./assets/images/divider.jpg"
-          alt="divider"
-        />
-        <p class="paragraph1">
-          Our team provides a variety of wedding-related services, from planning
-          the ceremony to designing and organizing its every element.
-        </p>
-      </div>
-      <div class="container center">
-        <div class="container-grid">
-          <div class="service-img">
-            <img
-              width="100%"
-              src="./assets/images/service-1-391x252.jpg"
-              alt="Decoration"
-            />
-            <div>
-              <h4>Decoration</h4>
-              <p>Unique Decoration Services</p>
-            </div>
-          </div>
-          <div class="service-img">
-            <img
-              width="100%"
-              src="./assets/images/service-2-391x252.jpg"
-              alt="Decoration"
-            />
-            <div>
-              <h4>Event Planning</h4>
-              <p>Let us plan your wedding</p>
-            </div>
-          </div>
-          <div class="service-img">
-            <img
-              width="100%"
-              src="./assets/images/service-3-391x252.jpg"
-              alt="Decoration"
-            />
-            <div>
-              <h4>Floral Design</h4>
-              <p>Best bouquets for your event</p>
-            </div>
-          </div>
-          <div class="service-img">
-            <img
-              width="100%"
-              src="./assets/images/service-4-391x252.jpg"
-              alt="Decoration"
-            />
-            <div>
-              <h4>Stunning Locations</h4>
-              <p>Choose the best location</p>
-            </div>
-          </div>
-          <div class="service-img">
-            <img
-              width="100%"
-              src="./assets/images/service-5-391x252.jpg"
-              alt="Decoration"
-            />
-            <div>
-              <h4>Cake Design</h4>
-              <p>Creative cake ideas for your event</p>
-            </div>
-          </div>
-          <div class="service-img">
-            <img
-              width="100%"
-              src="./assets/images/service-6-391x252.jpg"
-              alt="Decoration"
-            />
-            <div>
-              <h4>Dance Lessons</h4>
-              <p>Impress every guest with your dance</p>
-            </div>
+    </nav>
+    <!-- main -->
+    <main class="page">
+      <!-- header -->
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Organización de Eventos</h1>
+            <span class="text-small">
+              crea & organiza tu evento perfecto con
+              <span class="claim">Kairos Days</span>
+            </span>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="title center">
-      <h2>Our Portfolio</h2>
-      <img
-        style="margin: 0 auto; padding-bottom: 2rem"
-        width="200rem"
-        src="./assets/images/divider.jpg"
-        alt="divider"
-      />
-      <p>
-        Below are some of the best moments captured during the latest weddings
-        we have organized. Feel free to browse our website for more photos!
-      </p>
-    </div>
-    <div class="portfolio-container">
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-1-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-2-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-3-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-4-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-5-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-6-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-7-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-      <div class="center">
-        <img
-          width="100%"
-          src="./assets/images/gallery-home-8-463x383.jpg"
-          alt="Enjoying Life"
-        />
-      </div>
-    </div>
-    <div class="grey-background">
-      <div class="title center">
-        <h2>Plan Your Wedding In 1 Step</h2>
-        <img
-          style="margin: 0 auto; padding-bottom: 2rem"
-          width="200rem"
-          src="./assets/images/divider.jpg"
-          alt="divider"
-        />
-        <p>
-          Planning your wedding is not complex at all if you decide to trust us
-          with this matter. This short guide will help you find out more about
-          our services.
-        </p>
-      </div>
-      <div class="wrapper">
-        <div class="planning-container">
-          <div class="fix">
-            <span class="center">01</span>
-          </div>
-          <div>
-            <p><em>Discuss your wedding with our planners </em></p>
-            <h3>Initial Consultation</h3>
-            <h4>Includes: free consultation and budget definition</h4>
-            <p>
-              To make your wedding the best it can be, we recommend to consult
-              with us first. Our team of wedding planners and vendors is always
-              glad to provide you with necessary recommendations and tips on
-              planning the most important event in your life.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-container">
-      <div class="title center">
-        <h2>What Our Clients Say</h2>
-        <img
-          style="margin: 0 auto; padding-bottom: 2rem"
-          width="200rem"
-          src="./assets/images/divider.jpg"
-          alt="divider"
-        />
-        <p>
-          The overall experience was excellent! We were told by my friend that
-          wedding planner is the number 1 priority in the entire wedding
-          planning. It’s true! You did everything just like we wanted. Thank
-          you!
-        </p>
-        <p>Patricia Salvador</p>
-      </div>
-    </div>
-    <div class="testimonial-container">
-      <div class="title center">
-        <h2>Let’s Create the Best Event for You</h2>
-        <img
-          style="margin: 0 auto; padding-bottom: 2rem"
-          width="200rem"
-          src="./assets/images/divider.jpg"
-          alt="divider"
-        />
-        <p>
-          Our team of vendors and event planners is always glad to create an
-          unforgettable event for you and your guests.
-        </p>
-        <button type="button" style="width: 10rem; margin: 0 auto">
-          GET IN TOUCH
-        </button>
-      </div>
-    </div>
-    <footer>
-      <div class="footer-container">
-        <div class="description">
+      </header>
+      <!-- about us -->
+      <section class="about">
+        <div class="about-container">
+          <h3>Agencia de eventos para empresas en Valencia</h3>
           <p>
-            Amour provides a focused approach towards the wedding planning
-            segment. With years of experience in the event industry, we stand on
-            a stronger base with the most creative, enthusiastic and committed
-            team.
+            Nos dedicamos a más que simplemente crear eventos; construimos
+            experiencias que perduran en el tiempo. Guiados por la pasión y el
+            compromiso, cada miembro de nuestro equipo comparte el mismo
+            propósito: hacer de cada momento un recuerdo duradero y especial.
+            <br />
+            <br />
+            Nos esforzamos por inyectar autenticidad y cariño en cada detalle,
+            creando conexiones genuinas y duraderas. Nuestro compromiso va más
+            allá de la perfección estética; aspiramos a capturar la esencia
+            única de cada historia y transformarla en un evento que trascienda
+            el tiempo. En Kairos Days, no solo creamos momentos... creamos
+            recuerdos imperecederos llenos de significado.
           </p>
-          <small> Copyright © 2023 Kairos Days. All Rights Reserved. </small>
         </div>
+      </section>
+      <!-- vision -->
+      <section id="1" class="vision">
+        <div class="top">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="vision-container">
+          <div class="passion">
+            <div class="passion-container">
+              <h2>
+                Tu visión es <br />
+                nuestra pasión
+              </h2>
+              <p>
+                Transformamos tus visiones empresariales en experiencias
+                extraordinarias. Desde conferencias hasta eventos de team
+                building, somos la clave para hacer realidad tus eventos
+                corporativos de manera única y memorable.
+                <br />
+                <br />
+                ¡Descubre el poder de la excelencia en eventos con nosotros!"
+              </p>
+              <button class="btn btn-hipster">Agenda una demo</button>
+            </div>
+            <div class="img-container">
+              <img
+                class="img"
+                src="assets/images/photo-1621293954908-907159247fc8.avif"
+                alt="image "
+              />
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="details">
+            <div class="details-container">
+              <div>
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 70 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="70" height="70" rx="35" fill="#004643" />
+                  <g clip-path="url(#clip0_685_56)">
+                    <path
+                      d="M40.25 34.0625V35.5938C40.25 36.0312 40.0312 36.25 39.5938 36.25H30.4062C29.9688 36.25 29.75 36.0312 29.75 35.5938V34.0625C29.75 33.625 29.9688 33.4062 30.4062 33.4062H39.5938C40.0312 33.4062 40.25 33.625 40.25 34.0625ZM39.5938 38C40.0312 38 40.25 38.2188 40.25 38.6562V40.1875C40.25 40.625 40.0312 40.8438 39.5938 40.8438H30.4062C29.9688 40.8438 29.75 40.625 29.75 40.1875V38.6562C29.75 38.2188 29.9688 38 30.4062 38H39.5938ZM45.5 27.7188V45.875C45.5 46.6042 45.2448 47.224 44.7344 47.7344C44.224 48.2448 43.6042 48.5 42.875 48.5H27.125C26.3958 48.5 25.776 48.2448 25.2656 47.7344C24.7552 47.224 24.5 46.6042 24.5 45.875V23.125C24.5 22.3958 24.7552 21.776 25.2656 21.2656C25.776 20.7552 26.3958 20.5 27.125 20.5H38.2812C39.0104 20.5 39.6302 20.7552 40.1406 21.2656L44.7344 25.8594C45.2448 26.3698 45.5 26.9896 45.5 27.7188ZM38.5 23.3438V27.5H42.6562L38.5 23.3438ZM42.875 45.875V30.125H37.1875C36.8229 30.125 36.513 29.9974 36.2578 29.7422C36.0026 29.487 35.875 29.1771 35.875 28.8125V23.125H27.125V45.875H42.875Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_685_56">
+                      <rect
+                        width="21"
+                        height="29"
+                        fill="white"
+                        transform="matrix(1 0 0 -1 24.5 49)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p>
+                  Planificación de <br />
+                  Eventos Empresariales
+                </p>
+              </div>
+              <div>
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 70 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="70" height="70" rx="35" fill="#004643" />
+                  <g clip-path="url(#clip0_685_59)">
+                    <path
+                      d="M24.9648 24.9023C24.9648 24.9023 25.6257 24.2415 26.9473 22.9199C28.2689 21.5983 30.8073 20.9375 34.5625 20.9375C38.3177 20.9375 41.5169 22.2591 44.1602 24.9023C46.8034 27.5456 48.125 30.7448 48.125 34.5C48.125 38.2552 46.8034 41.4544 44.1602 44.0977C41.5169 46.7409 38.3177 48.0625 34.5625 48.0625C30.8073 48.0625 27.6081 46.7409 24.9648 44.0977C22.3216 41.4544 21 38.2552 21 34.5C21 30.7448 22.3216 27.5456 24.9648 24.9023ZM42.3008 26.7617C42.3008 26.7617 41.7676 26.2285 40.7012 25.1621C39.6348 24.0957 37.5885 23.5625 34.5625 23.5625C31.5365 23.5625 28.957 24.6289 26.8242 26.7617C24.6914 28.8945 23.625 31.474 23.625 34.5C23.625 37.526 24.6914 40.1055 26.8242 42.2383C28.957 44.3711 31.5365 45.4375 34.5625 45.4375C37.5885 45.4375 40.168 44.3711 42.3008 42.2383C44.4336 40.1055 45.5 37.526 45.5 34.5C45.5 31.474 44.4336 28.8945 42.3008 26.7617ZM42.2188 30.6719C42.5469 31 42.5469 31.3099 42.2188 31.6016L32.8125 40.9531C32.4844 41.2812 32.1745 41.2812 31.8828 40.9531L26.9062 35.9766C26.5781 35.6484 26.5781 35.3385 26.9062 35.0469L28.1641 33.7891C28.4557 33.4974 28.7656 33.4974 29.0938 33.7891L32.3203 37.125L40.0859 29.4141C40.3776 29.1224 40.6875 29.1406 41.0156 29.4688L42.2188 30.6719Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_685_59">
+                      <rect
+                        width="28"
+                        height="29"
+                        fill="white"
+                        transform="matrix(1 0 0 -1 21 49)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p>Servicios de Catering <br />y Decoración</p>
+              </div>
+              <div>
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 70 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="70" height="70" rx="35" fill="#004643" />
+                  <g clip-path="url(#clip0_685_53)">
+                    <path
+                      d="M25.3953 24.901C25.3953 24.901 26.0562 24.2401 27.378 22.9182C28.6999 21.5964 31.2388 20.9354 34.9947 20.9354C38.7506 20.9354 41.9504 22.2573 44.5941 24.901C47.2378 27.5447 48.5597 30.7445 48.5597 34.5004C48.5597 38.2563 47.2378 41.4561 44.5941 44.0999C41.9504 46.7436 38.7506 48.0654 34.9947 48.0654C31.2388 48.0654 28.039 46.7436 25.3953 44.0999C22.7515 41.4561 21.4297 38.2563 21.4297 34.5004C21.4297 30.7445 22.7515 27.5447 25.3953 24.901ZM44.7856 29.687C43.6187 27.3168 41.8319 25.5847 39.4252 24.4908C40.191 25.9494 40.7562 27.6815 41.1208 29.687H44.7856ZM36.8544 25.2565C36.8544 25.2565 36.6812 24.9739 36.3348 24.4087C35.9884 23.8435 35.5417 23.5609 34.9947 23.5609C34.4477 23.5609 33.8278 24.1261 33.135 25.2565C32.4421 26.387 31.9134 27.8638 31.5487 29.687H38.4406C38.076 27.8638 37.5472 26.387 36.8544 25.2565ZM24.274 32.3125C24.1281 33.0418 24.0552 33.7711 24.0552 34.5004C24.0552 35.2297 24.1281 35.959 24.274 36.6883H28.5404C28.4674 35.8861 28.431 35.1568 28.431 34.5004C28.431 33.8441 28.4674 33.1148 28.5404 32.3125H24.274ZM25.2038 39.3138C26.3707 41.684 28.1575 43.4161 30.5642 44.5101C29.7984 43.0515 29.2332 41.3194 28.8686 39.3138H25.2038ZM28.8686 29.687C29.2332 27.6815 29.7984 25.9494 30.5642 24.4908C28.1575 25.5847 26.3707 27.3168 25.2038 29.687H28.8686ZM33.135 43.7443C33.135 43.7443 33.3082 44.0269 33.6546 44.5921C34.001 45.1573 34.4477 45.4399 34.9947 45.4399C35.5417 45.4399 36.1616 44.8747 36.8544 43.7443C37.5472 42.6139 38.076 41.1371 38.4406 39.3138H31.5487C31.9134 41.1371 32.4421 42.6139 33.135 43.7443ZM38.8235 36.6883C38.8964 35.8496 38.9329 35.1203 38.9329 34.5004C38.9329 33.8441 38.8964 33.1148 38.8235 32.3125H31.1659C31.0929 33.1148 31.0565 33.8441 31.0565 34.5004C31.0565 35.1568 31.0929 35.8861 31.1659 36.6883H38.8235ZM39.4252 44.5101C41.8319 43.4161 43.6187 41.684 44.7856 39.3138H41.1208C40.7562 41.3194 40.191 43.0515 39.4252 44.5101ZM41.449 36.6883H45.7154C45.8613 35.959 45.9342 35.2297 45.9342 34.5004C45.9342 33.7711 45.8613 33.0418 45.7154 32.3125H41.449C41.5219 33.1148 41.5584 33.8441 41.5584 34.5004C41.5584 35.1568 41.5219 35.8861 41.449 36.6883Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_685_53">
+                      <rect
+                        width="27.13"
+                        height="29"
+                        fill="white"
+                        transform="matrix(1 0 0 -1 21.4297 49)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p>Incentivos y <br />Viajes de Empresa</p>
+              </div>
+              <div>
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 70 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="70" height="70" rx="35" fill="#004643" />
+                  <g clip-path="url(#clip0_685_50)">
+                    <path
+                      d="M29.1245 28.6204C29.1245 28.6204 29.5301 28.2148 30.3415 27.4034C31.1528 26.5921 32.7072 26.1864 35.0045 26.1864C37.3018 26.1864 39.2617 26.9977 40.8844 28.6204C42.5071 30.2431 43.3185 32.2031 43.3185 34.5004C43.3185 36.7977 42.5071 38.7577 40.8844 40.3804C39.2617 42.0031 37.3018 42.8145 35.0045 42.8145C32.7072 42.8145 30.7472 42.0031 29.1245 40.3804C27.5018 38.7577 26.6904 36.7977 26.6904 34.5004C26.6904 32.2031 27.5018 30.2431 29.1245 28.6204ZM30.9842 38.5207C30.9842 38.5207 31.2622 38.7987 31.8183 39.3548C32.3744 39.9109 33.4365 40.189 35.0045 40.189C36.5725 40.189 37.9125 39.6329 39.0247 38.5207C40.1369 37.4085 40.693 36.0684 40.693 34.5004C40.693 32.9324 40.1369 31.5923 39.0247 30.4802C37.9125 29.368 36.5725 28.8119 35.0045 28.8119C33.4365 28.8119 32.0964 29.368 30.9842 30.4802C29.872 31.5923 29.3159 32.9324 29.3159 34.5004C29.3159 36.0684 29.872 37.4085 30.9842 38.5207ZM25.405 24.901C25.405 24.901 26.066 24.2401 27.3878 22.9182C28.7097 21.5964 31.2486 20.9354 35.0045 20.9354C38.7604 20.9354 41.9602 22.2573 44.6039 24.901C47.2476 27.5447 48.5695 30.7445 48.5695 34.5004C48.5695 38.2563 47.2476 41.4561 44.6039 44.0999C41.9602 46.7436 38.7604 48.0654 35.0045 48.0654C31.2486 48.0654 28.0487 46.7436 25.405 44.0999C22.7613 41.4561 21.4395 38.2563 21.4395 34.5004C21.4395 30.7445 22.7613 27.5447 25.405 24.901ZM27.2647 42.2401C27.2647 42.2401 27.798 42.7734 28.8646 43.84C29.9313 44.9066 31.9779 45.4399 35.0045 45.4399C38.0311 45.4399 40.611 44.3733 42.7442 42.2401C44.8774 40.1069 45.944 37.527 45.944 34.5004C45.944 31.4738 44.8774 28.8939 42.7442 26.7607C40.611 24.6275 38.0311 23.5609 35.0045 23.5609C31.9779 23.5609 29.398 24.6275 27.2647 26.7607C25.1315 28.8939 24.0649 31.4738 24.0649 34.5004C24.0649 37.527 25.1315 40.1069 27.2647 42.2401ZM32.8439 32.3399C32.8439 32.3399 32.9943 32.1895 33.2952 31.8886C33.596 31.5878 34.1658 31.4374 35.0045 31.4374C35.8431 31.4374 36.5633 31.7382 37.165 32.3399C37.7667 32.9415 38.0675 33.6617 38.0675 34.5004C38.0675 35.3391 37.7667 36.0593 37.165 36.661C36.5633 37.2627 35.8431 37.5635 35.0045 37.5635C34.1658 37.5635 33.4456 37.2627 32.8439 36.661C32.2422 36.0593 31.9414 35.3391 31.9414 34.5004C31.9414 33.6617 32.2422 32.9415 32.8439 32.3399Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_685_50">
+                      <rect
+                        width="27.13"
+                        height="29"
+                        fill="white"
+                        transform="matrix(1 0 0 -1 21.4395 49)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p>Protocolo y <br />Etiqueta Empresarial</p>
+              </div>
+              <p>... y mucho más.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <!-- services -->
+      <section class="services">
+        <div id="2" class="services-container">
+          <h4>Cada detalle cuenta en vuestra historia</h4>
+          <p>Te proponemos lo siguiente:</p>
+          <div class="card-container">
+            <article class="card">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.929688"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  fill="#ABD1C6"
+                />
+                <g clip-path="url(#clip0_685_483)">
+                  <g clip-path="url(#clip1_685_483)">
+                    <g clip-path="url(#clip2_685_483)">
+                      <path
+                        d="M15.9377 22.4005C15.5134 22.4005 15.1064 22.569 14.8063 22.8691C14.5063 23.1692 14.3377 23.5761 14.3377 24.0005C14.3377 24.4248 14.5063 24.8318 14.8063 25.1318C15.1064 25.4319 15.5134 25.6005 15.9377 25.6005C16.1478 25.6005 16.3559 25.5591 16.55 25.4787C16.7441 25.3983 16.9205 25.2804 17.0691 25.1318C17.2177 24.9833 17.3355 24.8069 17.4159 24.6128C17.4963 24.4186 17.5377 24.2106 17.5377 24.0005C17.5377 23.7904 17.4963 23.5823 17.4159 23.3882C17.3355 23.1941 17.2177 23.0177 17.0691 22.8691C16.9205 22.7205 16.7441 22.6027 16.55 22.5223C16.3559 22.4419 16.1478 22.4005 15.9377 22.4005ZM15.9377 16.0005C15.7226 15.9953 15.5085 16.0326 15.3078 16.1102C15.1071 16.1879 14.9236 16.3043 14.7679 16.4529C14.6123 16.6015 14.4874 16.7794 14.4006 16.9763C14.3137 17.1732 14.2665 17.3853 14.2617 17.6005C14.2665 17.8156 14.3137 18.0277 14.4006 18.2247C14.4874 18.4216 14.6123 18.5994 14.7679 18.748C14.9236 18.8966 15.1071 19.0131 15.3078 19.0907C15.5085 19.1684 15.7226 19.2057 15.9377 19.2005C16.1528 19.2055 16.3667 19.1681 16.5674 19.0904C16.768 19.0127 16.9513 18.8963 17.1069 18.7477C17.2624 18.5991 17.3872 18.4213 17.474 18.2244C17.5608 18.0276 17.6079 17.8156 17.6127 17.6005C17.6079 17.3854 17.5608 17.1734 17.474 16.9765C17.3872 16.7797 17.2624 16.6019 17.1069 16.4533C16.9513 16.3047 16.768 16.1882 16.5674 16.1105C16.3667 16.0328 16.1528 15.9954 15.9377 16.0005ZM15.9377 28.8005C15.5134 28.8005 15.1064 28.969 14.8063 29.2691C14.5063 29.5692 14.3377 29.9761 14.3377 30.4005C14.3377 30.8248 14.5063 31.2318 14.8063 31.5318C15.1064 31.8319 15.5134 32.0005 15.9377 32.0005C16.3621 32.0005 16.769 31.8319 17.0691 31.5318C17.3691 31.2318 17.5377 30.8248 17.5377 30.4005C17.5377 29.9761 17.3691 29.5692 17.0691 29.2691C16.769 28.969 16.3621 28.8005 15.9377 28.8005ZM19.2887 31.4675H34.9287V29.3335H19.2887V31.4675ZM19.2887 25.0675H34.9287V22.9335H19.2887V25.0675ZM19.2887 16.5345V18.6675H34.9287V16.5335L19.2887 16.5345Z"
+                        fill="#004643"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_685_483">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.9297 10)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip1_685_483">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.9297 10)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip2_685_483">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.9297 10)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h5>Registro en línea</h5>
+              <p>
+                Gestiona el registro de tu evento con formularios de inscripción
+                totalmente personalizables.
+              </p>
+            </article>
+            <article class="card">
+              <svg
+                width="49"
+                height="48"
+                viewBox="0 0 49 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.359375"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  fill="#ABD1C6"
+                />
+                <g clip-path="url(#clip0_685_493)">
+                  <g clip-path="url(#clip1_685_493)">
+                    <g clip-path="url(#clip2_685_493)">
+                      <path
+                        d="M36.1937 21.8456C36.1895 21.4685 36.0839 21.0995 35.8878 20.7773C35.6918 20.4551 35.4127 20.1917 35.0797 20.0146L24.3597 14.3076L13.6387 20.0156C13.3045 20.192 13.0239 20.4549 12.826 20.7768C12.6281 21.0987 12.5202 21.4678 12.5137 21.8456V32.6156C12.5453 33.2143 12.8118 33.7763 13.2554 34.1796C13.6989 34.5829 14.2837 34.7949 14.8827 34.7696H33.8367C34.4356 34.7949 35.0204 34.5829 35.464 34.1796C35.9075 33.7763 36.1741 33.2143 36.2057 32.6156L36.1937 21.8456ZM24.3597 27.2306L14.5747 21.6736L24.3597 16.4616L34.1447 21.6736L24.3597 27.2306Z"
+                        fill="#004643"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_685_493">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.3594 10)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip1_685_493">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.3594 10)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip2_685_493">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.3594 10)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h5>Correos marketing</h5>
+              <p>
+                Crea campañas de correo electrónico personalizadas, segmentadas
+                y automatizadas.
+              </p>
+            </article>
+            <article class="card">
+              <svg
+                width="49"
+                height="49"
+                viewBox="0 0 49 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.359375"
+                  y="0.389648"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  fill="#ABD1C6"
+                />
+                <g clip-path="url(#clip0_685_514)">
+                  <g clip-path="url(#clip1_685_514)">
+                    <g clip-path="url(#clip2_685_514)">
+                      <path
+                        d="M33.4273 15.7231H15.2943C14.708 15.7121 14.1413 15.934 13.7184 16.3402C13.2955 16.7465 13.0509 17.3038 13.0383 17.8901L13.0273 30.8901C13.0426 31.4774 13.2894 32.0349 13.7142 32.4409C14.1389 32.8468 14.7069 33.0684 15.2943 33.0571H33.4273C34.0148 33.0684 34.5828 32.8468 35.0075 32.4409C35.4322 32.0349 35.6791 31.4774 35.6943 30.8901V17.8901C35.6791 17.3027 35.4322 16.7452 35.0075 16.3393C34.5828 15.9333 34.0148 15.7118 33.4273 15.7231ZM27.7603 30.8901H15.2943V26.5561H27.7603V30.8901ZM27.7603 25.4731H15.2943V21.1401H27.7603V25.4731ZM33.4273 30.8901H28.8943V21.1401H33.4273V30.8901Z"
+                        fill="#004643"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_685_514">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.3594 10.3896)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip1_685_514">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.3594 10.3896)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip2_685_514">
+                    <rect
+                      width="28"
+                      height="28"
+                      fill="white"
+                      transform="translate(10.3594 10.3896)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h5>Gestión de Agenda</h5>
+              <p>
+                Destaca a tus oradores y crea múltiples actividades y dinámicas
+                para tu evento.
+              </p>
+            </article>
+            <article class="card">
+              <svg
+                width="49"
+                height="49"
+                viewBox="0 0 49 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.929688"
+                  y="0.389648"
+                  width="48"
+                  height="48"
+                  rx="24"
+                  fill="#ABD1C6"
+                />
+                <g clip-path="url(#clip0_685_503)">
+                  <g clip-path="url(#clip1_685_503)">
+                    <g clip-path="url(#clip2_685_503)">
+                      <path
+                        d="M16.1825 37.6893C15.906 37.6944 15.6313 37.6427 15.3755 37.5375C15.1196 37.4323 14.8881 37.2757 14.6951 37.0775C14.4969 36.8848 14.3402 36.6535 14.2348 36.3978C14.1294 36.1422 14.0775 35.8676 14.0823 35.5911V21.3515C14.0775 21.075 14.1294 20.8005 14.2348 20.5448C14.3402 20.2892 14.4969 20.0578 14.6951 19.865C14.888 19.6666 15.1195 19.51 15.3753 19.4046C15.6312 19.2992 15.9059 19.2473 16.1825 19.2523H36.8248C37.1014 19.2473 37.3762 19.2992 37.632 19.4046C37.8878 19.51 38.1193 19.6666 38.3122 19.865C38.5105 20.0578 38.6671 20.2892 38.7725 20.5448C38.8779 20.8005 38.9298 21.075 38.925 21.3515V35.5901C38.9298 35.8666 38.8779 36.1411 38.7725 36.3968C38.6671 36.6524 38.5105 36.8838 38.3122 37.0766C38.1192 37.2748 37.8877 37.4313 37.6319 37.5365C37.376 37.6418 37.1014 37.6934 36.8248 37.6883L16.1825 37.6893ZM26.5037 28.6627L36.8248 23.5896V21.3505L26.5037 26.3186L16.1825 21.3505V23.5896L26.5037 28.6627Z"
+                        fill="#004643"
+                      />
+                      <path
+                        opacity="0.6"
+                        d="M13.0349 32.1267C12.4885 32.0168 11.9812 31.7632 11.5654 31.392C11.3662 31.2252 11.2063 31.0163 11.0975 30.7804C10.9886 30.5444 10.9333 30.2873 10.9357 30.0275V18.027C10.9318 17.7368 11.0105 17.4515 11.1626 17.2043C11.3123 16.961 11.5237 16.7617 11.7754 16.6265L22.9712 11.0996L33.7121 16.6276C33.9948 16.7703 34.2269 16.9963 34.3769 17.2753C34.5407 17.5681 34.6699 17.8791 34.7617 18.2019H32.1727L22.9712 13.4437L13.0349 18.3769V32.1267Z"
+                        fill="#004643"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_685_503">
+                    <rect
+                      width="28"
+                      height="26.59"
+                      fill="white"
+                      transform="translate(10.9297 11.0996)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip1_685_503">
+                    <rect
+                      width="28"
+                      height="26.59"
+                      fill="white"
+                      transform="translate(10.9297 11.0996)"
+                    />
+                  </clipPath>
+                  <clipPath id="clip2_685_503">
+                    <rect
+                      width="27.9895"
+                      height="26.59"
+                      fill="white"
+                      transform="translate(10.9355 11.0996)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h5>Segmentación de la audiencia</h5>
+              <p>
+                Personaliza y adapta la experiencia para los diferentes tipos de
+                asistentes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- galeria -->
+      <div class="title">
+        <h4>Momentos únicos para personas únicas</h4>
+        <p>Conoce nuestro trabajo:</p>
       </div>
+      <section class="galeria">
+        <div class="galeria-container">
+          <img
+            src="./assets/images/gallery-home-1-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+          <img
+            src="./assets/images/gallery-home-2-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+          <img
+            src="./assets/images/gallery-home-3-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+          <img
+            src="./assets/images/gallery-home-4-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+          <img
+            src="./assets/images/gallery-home-5-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+          <img
+            src="./assets/images/gallery-home-6-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+          <img
+            src="./assets/images/gallery-home-7-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+          <img
+            src="./assets/images/gallery-home-8-463x383.jpg"
+            alt="Image"
+            class="img"
+          />
+        </div>
+      </section>
+      <!-- form -->
+      <span class="span">
+        <h5>Dinos como te podemos ayudar</h5>
+      </span>
+      <form class="form">
+        <h4>Contacta</h4>
+        <div class="form-row">
+          <label for="name" class="form-label">nombre</label>
+          <input type="text" placeholder="hola" id="name" class="form-input" />
+        </div>
+        <div class="form-row">
+          <label for="number" class="form-label">numero</label>
+          <input type="number" id="number" class="form-input" />
+        </div>
+        <div class="form-row">
+          <label for="email" class="form-label">email</label>
+          <input type="email" id="email" class="form-input" />
+          <small class="form-alert">necesario</small>
+        </div>
+        <div class="form-row">
+          <label for="textarea" class="form-label">Texto</label>
+          <textarea class="form-textarea">¿Que deseas crear?</textarea>
+        </div>
+        <button class="btn btn-block">Envia</button>
+      </form>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Kairos Days</span>
+        Built by Roberto Merani
+      </p>
     </footer>
-    <script src="main.js"></script>
+    <!-- script -->
+    <script text="type/javascript" src="public/app.js"></script>
   </body>
 </html>
