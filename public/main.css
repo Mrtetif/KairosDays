@@ -45,7 +45,7 @@ html {
   --ternary: #e16162;
 
   /* button */
-  --btn-primary: #f9bc60;
+  --btn-primary: #fed353;
 
   /* grey */
   --grey-50: #f9fafb;
@@ -205,6 +205,32 @@ ul {
 
 .btn-block {
   width: 100%;
+}
+
+.none {
+  opacity: 0;
+}
+
+.btn-top {
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 1;
+  border: none;
+  border-radius: 50%;
+  color: var(--secondary-500);
+  background: var(--primary-500);
+  transition: var(--transition);
+}
+
+.btn-top:hover {
+  color: var(--primary-500);
+  background: var(--btn-primary);
 }
 
 /* alerts */
