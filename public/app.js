@@ -38,3 +38,24 @@ btnTop.addEventListener('click', function () {
     } else clearTimeout(scrollAnimation);
   }
 });
+
+// modal
+
+const modalOverlay = document.querySelectorAll('.modal-overlay');
+const relative = document.querySelectorAll('.relative');
+const openModal = document.querySelector('.open-modal');
+const openContainer = document.querySelector('.open-container');
+
+let currentImageIdx = 0;
+
+openModal.addEventListener('click', function () {
+  this.style.display = 'none';
+  openContainer.style.display = 'none';
+});
+
+modalOverlay.forEach(function (btn, index) {
+  btn.addEventListener('click', function () {
+    openModal.style.display = 'block';
+    openContainer.style.display = 'block';
+  });
+});
