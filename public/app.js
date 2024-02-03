@@ -46,6 +46,9 @@ const relative = document.querySelectorAll('.relative');
 const openModal = document.querySelector('.open-modal');
 const openContainer = document.querySelector('.open-container');
 
+const prevBtn = document.querySelector('.btn-prev');
+const nextBtn = document.querySelector('.btn-next');
+
 let currentImageIdx = 0;
 
 openModal.addEventListener('click', function () {
@@ -57,5 +60,28 @@ modalOverlay.forEach(function (btn, index) {
   btn.addEventListener('click', function () {
     openModal.style.display = 'block';
     openContainer.style.display = 'block';
+
+    currentImageIdx = index + 1;
+    currentImageDisplay(currentImageIdx);
   });
+});
+
+function currentImageDisplay(position) {
+  openContainer.style.background = `url(./assets/images/gallery-home-${currentImageIdx}-463x383.jpg) center/cover no-repeat`;
+}
+
+prevBtn.addEventListener('click', function () {
+  currentImageIdx--;
+  if (currentImageIdx === 0) {
+    currentImageIdx = relative.length;
+  }
+  currentImageDisplay(currentImageIdx);
+});
+
+nextBtn.addEventListener('click', function () {
+  currentImageIdx++;
+  if (currentImageIdx === 8) {
+    currentImageIdx = 1;
+  }
+  currentImageDisplay(currentImageIdx);
 });
