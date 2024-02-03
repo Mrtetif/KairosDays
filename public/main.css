@@ -1097,6 +1097,12 @@ ul {
   }
 }
 
+@media screen and (orientation: landscape) {
+  .open-container {
+    height: 85vh;
+  }
+}
+
 /* form */
 
 .span {
