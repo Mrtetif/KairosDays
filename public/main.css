@@ -870,6 +870,13 @@ ul {
   z-index: 1;
 }
 
+.modal-active {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
 /* btn prev/next */
 
 .btn-prev,
@@ -942,7 +949,7 @@ ul {
   }
 
   .open-container {
-    height: 30vh;
+    height: 15rem;
   }
 }
 

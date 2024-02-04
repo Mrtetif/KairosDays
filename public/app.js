@@ -54,12 +54,16 @@ let currentImageIdx = 0;
 openModal.addEventListener('click', function () {
   this.style.display = 'none';
   openContainer.style.display = 'none';
+
+  document.body.classList.remove('modal-active');
 });
 
 modalOverlay.forEach(function (btn, index) {
   btn.addEventListener('click', function () {
     openModal.style.display = 'block';
     openContainer.style.display = 'block';
+
+    document.body.classList.add('modal-active');
 
     currentImageIdx = index + 1;
     currentImageDisplay(currentImageIdx);
