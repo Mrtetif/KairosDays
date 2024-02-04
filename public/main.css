@@ -369,6 +369,12 @@ ul {
 
 .nav-btn {
   padding: 0.15rem 0.75rem;
+  background: var(--secondary-500);
+}
+
+.nav-btn:hover {
+  color: var(--secondary-200);
+  background: var(--secondary-700);
 }
 
 .nav-links {
