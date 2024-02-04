@@ -859,6 +859,7 @@ ul {
 
 .open-container {
   position: fixed;
+  min-width: 300px;
   width: 80vw;
   height: 80vh;
   top: 50%;
@@ -941,7 +942,7 @@ ul {
   }
 
   .open-container {
-    height: 25vh;
+    height: 30vh;
   }
 }
 
