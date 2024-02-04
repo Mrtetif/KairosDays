@@ -70,7 +70,7 @@ modalOverlay.forEach(function (btn, index) {
   });
 });
 
-function currentImageDisplay(position) {
+function currentImageDisplay() {
   openContainer.style.background = `url(./assets/images/gallery-home-${currentImageIdx}-463x383.jpg) center/cover no-repeat`;
 }
 
@@ -84,7 +84,7 @@ prevBtn.addEventListener('click', function () {
 
 nextBtn.addEventListener('click', function () {
   currentImageIdx++;
-  if (currentImageIdx === 8) {
+  if (currentImageIdx === 9) {
     currentImageIdx = 1;
   }
   currentImageDisplay(currentImageIdx);
