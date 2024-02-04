@@ -955,7 +955,7 @@ ul {
 
 @media screen and (min-width: 376px) {
   .open-container {
-    height: calc(100% - (40vh + 30vh));
+    height: 22.5rem;
   }
 }
 
